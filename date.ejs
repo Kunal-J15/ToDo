@@ -1,0 +1,20 @@
+
+exports.getdate = function(){
+  var day = new Date();
+  var option = {
+    weekday:"long",
+    year:"numeric",
+    month:"long",
+    day:"numeric"
+  }
+  var toy = day.toLocaleDateString("en-US",option);
+  return toy;
+}
+exports.getday = function(){
+  var day = new Date();
+  var option = {
+    weekday:"long",
+  }
+  var toy = day.toLocaleDateString("en-US",option);
+  return toy;
+}
